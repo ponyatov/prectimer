@@ -16,6 +16,9 @@ let legas () =
   Sys.command "git add legas lib";
   Sys.command "code lib/legas.ml"
 
+#use "legas/git.ml"
+git();
+
 #use "legas/files.ml"
 files();;
 
